@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perangkat Jaringan & Mekanisme Pengiriman Data</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef3f8;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #075985, #0ea5e9);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            margin: 18px 0;
+            padding: 22px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,.08);
+        }
+
+        .card h2 {
+            color: #0369a1;
+            margin-top: 0;
+        }
+
+        .card h3 {
+            color: #075985;
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 10px;
+            border-radius: 8px;
+            margin: 4px;
+            font-weight: bold;
+        }
+
+        .mechanism {
+            background: #f0f9ff;
+            border-left: 5px solid #0ea5e9;
+            padding: 15px;
+            margin-top: 12px;
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0369a1;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Perangkat Jaringan & Mekanisme Pengiriman Data</h1>
+    <p>Ringkasan Informatika SMA/MA Kelas XI</p>
+</header>
+
+<div class="container">
+
+    <!-- DASAR -->
+    <div class="card">
+        <h2>1. Dasar Jaringan Komputer</h2>
+
+        <p>
+            Jaringan komputer digunakan untuk menghubungkan komputer
+            dan perangkat agar dapat berkomunikasi serta bertukar data.
+        </p>
+
+        <span class="badge">Server</span>
+        <span class="badge">Client</span>
+        <span class="badge">NIC</span>
+        <span class="badge">Kabel</span>
+        <span class="badge">Switch</span>
+        <span class="badge">Router</span>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Perangkat terhubung melalui kabel atau sinyal nirkabel.
+            Data kemudian dikirim menggunakan protokol jaringan dari
+            perangkat sumber menuju perangkat tujuan.
+        </div>
+    </div>
+
+    <!-- SERVER -->
+    <div class="card">
+        <h2>2. Komputer Server</h2>
+
+        <p>
+            Server adalah komputer yang menyediakan layanan kepada
+            komputer client, seperti penyimpanan file, data, aplikasi,
+            web, dan akses internet.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Client meminta layanan → Server memproses permintaan →
+            Server mengirimkan data atau layanan kembali ke client.
+        </div>
+    </div>
+
+    <!-- CLIENT -->
+    <div class="card">
+        <h2>3. Komputer Client</h2>
+
+        <p>
+            Client adalah komputer atau perangkat yang digunakan pengguna
+            untuk mengakses data dan layanan dari server.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Client mengirim permintaan → Server menerima →
+            Server memberikan layanan → Client menerima hasil.
+        </div>
+    </div>
+
+    <!-- NIC -->
+    <div class="card">
+        <h2>4. Kartu Jaringan (NIC)</h2>
+
+        <p>
+            NIC atau Network Interface Card adalah perangkat jaringan
+            yang memungkinkan komputer terhubung dan berkomunikasi
+            dalam jaringan.
+        </p>
+
+        <div class="mechanism">
+            <b>Fungsi:</b>
+            Menghubungkan komputer ke jaringan dan membantu proses
+            pengiriman serta penerimaan data.
+        </div>
+    </div>
+
+    <!-- KABEL -->
+    <div class="card">
+        <h2>5. Kabel dan Media Jaringan</h2>
+
+        <h3>Kabel Koaksial</h3>
+        <p>
+            Kabel dengan konduktor tembaga di bagian tengah yang
+            dilindungi lapisan isolasi dan pelindung logam.
+        </p>
+        <b>Kelebihan:</b> tahan gangguan dan dapat digunakan untuk jarak jauh.<br>
+        <b>Kekurangan:</b> sulit dipasang.
+        
+        <h3>Kabel UTP</h3>
+        <p>
+            Unshielded Twisted Pair terdiri dari delapan kawat tembaga
+            yang dipilin berpasangan dan umum digunakan pada LAN.
+        </p>
+        <b>Konektor:</b> RJ-45
+
+        <h3>Kabel STP</h3>
+        <p>
+            Shielded Twisted Pair memiliki pelindung pada pasangan kabel
+            sehingga lebih tahan terhadap gangguan listrik dan radio.
+        </p>
+        <b>Kekurangan:</b> lebih mahal dan pemasangannya lebih sulit.
+
+        <h3>Fiber Optic</h3>
+        <p>
+            Kabel yang menggunakan serat kaca atau plastik untuk
+            mengirim data menggunakan cahaya.
+        </p>
+
+        <b>Kelebihan:</b>
+        <ul>
+            <li>Kecepatan tinggi</li>
+            <li>Jarak transmisi jauh</li>
+            <li>Bandwidth besar</li>
+            <li>Tahan terhadap gangguan listrik</li>
+        </ul>
+
+        <b>Jenis:</b> Single Mode dan Multimode.
+    </div>
+
+    <!-- REPEATER -->
+    <div class="card">
+        <h2>6. Repeater</h2>
+
+        <p>
+            Repeater berfungsi memperkuat atau memulihkan sinyal yang
+            melemah karena jarak transmisi yang jauh.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Sinyal melemah → Repeater menerima sinyal →
+            Sinyal diperkuat → Sinyal diteruskan kembali.
+        </div>
+    </div>
+
+    <!-- HUB -->
+    <div class="card">
+        <h2>7. Hub</h2>
+
+        <p>
+            Hub digunakan untuk menghubungkan beberapa perangkat
+            dalam jaringan dan membagi koneksi melalui beberapa port.
+        </p>
+
+        <h3>Hub Aktif</h3>
+        <p>
+            Memiliki sumber listrik sendiri dan dapat membersihkan,
+            memperkuat, serta meneruskan sinyal.
+        </p>
+
+        <h3>Hub Pasif</h3>
+        <p>
+            Hanya meneruskan sinyal tanpa membersihkan atau memperkuatnya.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Data masuk ke hub → Hub meneruskan data ke perangkat
+            yang terhubung.
+        </div>
+    </div>
+
+    <!-- BRIDGE -->
+    <div class="card">
+        <h2>8. Bridge</h2>
+
+        <p>
+            Bridge digunakan untuk menghubungkan dua atau lebih jaringan
+            lokal serta mengurangi lalu lintas data yang tidak diperlukan.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Bridge membaca alamat MAC sumber dan tujuan →
+            menentukan apakah data perlu diteruskan →
+            data diteruskan hanya jika diperlukan.
+        </div>
+
+        <p>
+            Bridge bekerja pada <b>Data Link Layer</b>.
+        </p>
+    </div>
+
+    <!-- SWITCH -->
+    <div class="card">
+        <h2>9. Switch</h2>
+
+        <p>
+            Switch menghubungkan berbagai perangkat dalam jaringan
+            dan mengatur pengiriman data agar lebih efisien.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Data masuk → Switch membaca alamat tujuan →
+            Switch menentukan port tujuan →
+            Data dikirim langsung ke perangkat tujuan.
+        </div>
+
+        <p>
+            Berbeda dengan hub, switch tidak harus mengirim data
+            ke seluruh perangkat.
+        </p>
+    </div>
+
+    <!-- ROUTER -->
+    <div class="card">
+        <h2>10. Router</h2>
+
+        <p>
+            Router menghubungkan beberapa jaringan dan menentukan
+            jalur yang harus dilewati paket data.
+        </p>
+
+        <div class="mechanism">
+            <b>Mekanisme:</b><br>
+            Paket datang → Router membaca alamat IP tujuan →
+            Router melihat informasi jaringan/routing →
+            Router menentukan jalur →
+            Paket diteruskan ke jaringan tujuan.
+        </div>
+
+        <h3>Jenis Router</h3>
+        <ul>
+            <li>
+                <b>Router Dedicated:</b> perangkat khusus yang dibuat
+                untuk menjalankan fungsi router.
+            </li>
+            <li>
+                <b>Router PC:</b> komputer yang difungsikan sebagai router.
+            </li>
+        </ul>
+
+        <h3>Tanggung Jawab Router</h3>
+        <ul>
+            <li>Mencegah data melewati jalur yang tidak diperlukan.</li>
+            <li>Mengarahkan data menuju jaringan yang tepat.</li>
+            <li>Membantu memastikan informasi sampai ke komputer tujuan.</li>
+        </ul>
+    </div>
+
+    <!-- PERBANDINGAN -->
+    <div class="card">
+        <h2>11. Perbandingan Perangkat</h2>
+
+        <table>
+            <tr>
+                <th>Perangkat</th>
+                <th>Fungsi Utama</th>
+            </tr>
+
+            <tr>
+                <td>Server</td>
+                <td>Menyediakan layanan kepada client</td>
+            </tr>
+
+            <tr>
+                <td>Client</td>
+                <td>Mengakses layanan dari server</td>
+            </tr>
+
+            <tr>
+                <td>NIC</td>
+                <td>Menghubungkan komputer ke jaringan</td>
+            </tr>
+
+            <tr>
+                <td>Repeater</td>
+                <td>Memperkuat atau memulihkan sinyal</td>
+            </tr>
+
+            <tr>
+                <td>Hub</td>
+                <td>Meneruskan data ke perangkat yang terhubung</td>
+            </tr>
+
+            <tr>
+                <td>Bridge</td>
+                <td>Menghubungkan segmen jaringan dan menyaring data</td>
+            </tr>
+
+            <tr>
+                <td>Switch</td>
+                <td>Mengirim data ke perangkat tujuan secara efisien</td>
+            </tr>
+
+            <tr>
+                <td>Router</td>
+                <td>Menentukan jalur paket antarjaringan</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ALUR -->
+    <div class="card">
+        <h2>12. Alur Pengiriman Data Sederhana</h2>
+
+        <div class="mechanism">
+            <b>Client</b>
+            →
+            <b>NIC</b>
+            →
+            <b>Switch/Hub</b>
+            →
+            <b>Router</b>
+            →
+            <b>Jaringan Tujuan</b>
+            →
+            <b>Server/Client Tujuan</b>
+        </div>
+
+        <p>
+            Setiap perangkat mempunyai tugas berbeda. NIC menyediakan
+            koneksi, switch mengatur pengiriman dalam jaringan,
+            router menentukan jalur antarjaringan, sedangkan server
+            menyediakan layanan.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    Informatika SMA/MA Kelas XI • Perangkat Jaringan dan Mekanisme Pengiriman Data
+</footer>
+
+  <!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jaringan Komputer - Informatika XI</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef5f9;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #075985, #0ea5e9);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 20px 0;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h2 {
+    color: #0369a1;
+    margin-top: 0;
+}
+
+.card h3 {
+    color: #075985;
+}
+
+p {
+    line-height: 1.7;
+}
+
+li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.mekanisme {
+    background: #f0f9ff;
+    border-left: 5px solid #0ea5e9;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.alur {
+    background: #e0f2fe;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.badge {
+    display: inline-block;
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 7px 12px;
+    margin: 4px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #0369a1;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.warning {
+    background: #fff7ed;
+    border-left: 5px solid #f97316;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jaringan Komputer</h1>
+    <p>Perangkat Jaringan dan Mekanisme Pengiriman Data</p>
+    <p>Informatika SMA/MA Kelas XI</p>
+</header>
+
+<div class="container">
+
+<!-- DASAR -->
+<div class="card">
+<h2>1. Jaringan Komputer</h2>
+
+<p>
+Jaringan komputer adalah sistem yang menghubungkan komputer dan
+perangkat agar dapat berkomunikasi serta bertukar data.
+</p>
+
+<span class="badge">Server</span>
+<span class="badge">Client</span>
+<span class="badge">NIC</span>
+<span class="badge">Switch</span>
+<span class="badge">Router</span>
+<span class="badge">Kabel</span>
+
+<div class="mekanisme">
+<b>Mekanisme dasar:</b><br>
+Perangkat terhubung → data dibuat menjadi paket →
+paket dikirim melalui jaringan → paket diarahkan →
+paket diterima oleh perangkat tujuan.
+</div>
+</div>
+
+
+<!-- SERVER -->
+<div class="card">
+<h2>2. Komputer Server</h2>
+
+<p>
+Server adalah komputer yang menyediakan layanan kepada komputer
+client, seperti penyimpanan file, data, aplikasi, web, dan akses
+internet.
+</p>
+
+<div class="mekanisme">
+<b>Mekanisme:</b><br>
+Client mengirim permintaan → Server menerima →
+Server memproses → Server mengirimkan hasil kepada client.
+</div>
+</div>
+
+
+<!-- CLIENT -->
+<div class="card">
+<h2>3. Komputer Client</h2>
+
+<p>
+Client adalah komputer atau perangkat yang digunakan pengguna
+untuk mengakses data dan layanan dari server.
+</p>
+
+<div class="mekanisme">
+<b>Mekanisme:</b><br>
+Client meminta layanan → Server memberikan layanan →
+Client menerima dan menggunakan hasilnya.
+</div>
+</div>
+
+
+<!-- NIC -->
+<div class="card">
+<h2>4. Kartu Jaringan (NIC)</h2>
+
+<p>
+NIC atau Network Interface Card adalah perangkat yang
+memungkinkan komputer terhubung dan berkomunikasi dengan jaringan.
+</p>
+
+<div class="mekanisme">
+<b>Fungsi:</b><br>
+Menghubungkan komputer dengan jaringan serta membantu
+pengiriman dan penerimaan data.
+</div>
+</div>
+
+
+<!-- KABEL -->
+<div class="card">
+<h2>5. Kabel dan Media Jaringan</h2>
+
+<h3>Kabel Koaksial</h3>
+<p>
+Memiliki konduktor tembaga di tengah yang dilindungi isolasi
+dan pelindung logam.
+</p>
+
+<ul>
+<li>Tahan terhadap gangguan sinyal.</li>
+<li>Dapat digunakan untuk jarak relatif jauh.</li>
+<li>Kekurangannya sulit dipasang.</li>
+</ul>
+
+
+<h3>Kabel UTP</h3>
+<p>
+Unshielded Twisted Pair terdiri dari delapan kawat tembaga
+yang dipilin berpasangan dan umum digunakan pada LAN.
+</p>
+
+<ul>
+<li>Murah.</li>
+<li>Mudah dipasang.</li>
+<li>Menggunakan konektor RJ-45.</li>
+<li>Lebih rentan terhadap gangguan listrik dibanding STP.</li>
+</ul>
+
+
+<h3>Kabel STP</h3>
+<p>
+Shielded Twisted Pair memiliki pelindung untuk mengurangi
+gangguan listrik dan radio.
+</p>
+
+<ul>
+<li>Lebih tahan terhadap gangguan.</li>
+<li>Dapat digunakan pada lingkungan dengan banyak gangguan.</li>
+<li>Lebih mahal dan pemasangannya lebih sulit.</li>
+</ul>
+
+
+<h3>Fiber Optic</h3>
+<p>
+Fiber optic menggunakan cahaya untuk mengirimkan data melalui
+serat kaca atau plastik.
+</p>
+
+<ul>
+<li>Kecepatan tinggi.</li>
+<li>Bandwidth besar.</li>
+<li>Jarak transmisi jauh.</li>
+<li>Tahan terhadap gangguan listrik.</li>
+<li>Cocok untuk jaringan WAN.</li>
+</ul>
+
+<p>
+Jenis fiber optic:
+<b>Single Mode</b> dan <b>Multimode</b>.
+</p>
+</div>
+
+
+<!-- REPEATER -->
+<div class="card">
+<h2>6. Repeater</h2>
+
+<p>
+Repeater digunakan untuk memperkuat atau memulihkan sinyal
+yang melemah akibat jarak transmisi.
+</p>
+
+<div class="alur">
+Sinyal melemah → Repeater menerima → Sinyal diperkuat
+→ Sinyal diteruskan
+</div>
+</div>
+
+
+<!-- HUB -->
+<div class="card">
+<h2>7. Hub</h2>
+
+<p>
+Hub menghubungkan beberapa perangkat dan membagi koneksi
+melalui beberapa port.
+</p>
+
+<h3>Hub Aktif</h3>
+<p>
+Memiliki sumber listrik sendiri dan dapat membersihkan,
+memperkuat, serta meneruskan sinyal.
+</p>
+
+<h3>Hub Pasif</h3>
+<p>
+Hanya meneruskan sinyal tanpa memperkuatnya.
+</p>
+
+<div class="mekanisme">
+Data masuk ke hub → Hub meneruskan data ke perangkat
+yang terhubung.
+</div>
+
+<div class="warning">
+<b>Kelemahan hub:</b>
+Data dapat diteruskan ke banyak perangkat sehingga
+traffic dan kemungkinan tabrakan paket dapat meningkat.
+</div>
+</div>
+
+
+<!-- BRIDGE -->
+<div class="card">
+<h2>8. Bridge</h2>
+
+<p>
+Bridge digunakan untuk menghubungkan dua atau lebih jaringan
+lokal dan mengurangi lalu lintas data yang tidak diperlukan.
+</p>
+
+<div class="mekanisme">
+Bridge membaca alamat MAC sumber dan tujuan →
+menentukan apakah paket perlu diteruskan →
+paket diteruskan hanya jika diperlukan.
+</div>
+
+<p>
+Bridge bekerja pada <b>Data Link Layer</b>.
+</p>
+</div>
+
+
+<!-- SWITCH -->
+<div class="card">
+<h2>9. Switch</h2>
+
+<p>
+Switch menghubungkan perangkat dalam jaringan dan mengatur
+pengiriman data agar lebih efisien.
+</p>
+
+<div class="alur">
+Data masuk → Switch membaca alamat tujuan →
+Menentukan port → Data dikirim ke tujuan
+</div>
+
+<p>
+Switch dapat mengirim data langsung ke perangkat tujuan,
+sehingga lebih efisien dibandingkan hub.
+</p>
+</div>
+
+
+<!-- ROUTER -->
+<div class="card">
+<h2>10. Router</h2>
+
+<p>
+Router menghubungkan beberapa jaringan dan menentukan jalur
+yang harus dilewati paket data berdasarkan alamat tujuan.
+</p>
+
+<div class="alur">
+Paket masuk → Cek alamat IP →
+Cari jalur terbaik → Paket diteruskan →
+Jaringan tujuan
+</div>
+
+<h3>Jenis Router</h3>
+
+<ul>
+<li>
+<b>Router Dedicated:</b>
+perangkat khusus yang dibuat untuk menjalankan fungsi router.
+</li>
+
+<li>
+<b>Router PC:</b>
+komputer yang difungsikan sebagai router.
+</li>
+</ul>
+
+<h3>Tanggung Jawab Router</h3>
+
+<ul>
+<li>Menentukan jalur paket data.</li>
+<li>Menghindari jalur yang tidak diperlukan.</li>
+<li>Mengarahkan data menuju jaringan tujuan.</li>
+<li>Membantu memastikan informasi sampai ke tujuan.</li>
+</ul>
+</div>
+
+
+<!-- ENKAPSULASI -->
+<div class="card">
+<h2>11. Enkapsulasi Paket Data</h2>
+
+<p>
+Sebelum dikirim melalui jaringan, data dibungkus dengan
+informasi tambahan yang disebut <b>header</b>.
+</p>
+
+<p>
+Header dapat berisi informasi seperti alamat pengirim,
+alamat penerima, dan informasi posisi paket.
+</p>
+
+<div class="alur">
+Data
+↓
+Diberi Header
+↓
+Menjadi Paket
+↓
+Dikirim melalui Jaringan
+↓
+Diterima Tujuan
+↓
+Data Disusun Kembali
+</div>
+
+<div class="mekanisme">
+<b>Tujuan enkapsulasi:</b><br>
+Membantu jaringan mengetahui asal, tujuan, dan informasi
+yang diperlukan agar paket dapat dikirim dan disusun kembali
+dengan benar.
+</div>
+</div>
+
+
+<!-- ROUTING -->
+<div class="card">
+<h2>12. Mekanisme Routing</h2>
+
+<p>
+Paket data dapat melewati rute yang berbeda bergantung pada
+kondisi jaringan saat pengiriman.
+</p>
+
+<div class="mekanisme">
+<b>Contoh:</b><br>
+Jika jalur utama mengalami gangguan, jaringan dapat
+menggunakan jalur alternatif sehingga paket tetap dapat
+mencapai tujuan.
+</div>
+
+<h3>Keuntungan</h3>
+
+<ul>
+<li>Membagi beban jaringan.</li>
+<li>Menjaga efisiensi lalu lintas data.</li>
+<li>Dapat menggunakan jalur alternatif.</li>
+<li>Meningkatkan keandalan pengiriman data.</li>
+</ul>
+</div>
+
+
+<!-- TABEL ROUTER -->
+<div class="card">
+<h2>13. Informasi yang Digunakan Router</h2>
+
+<p>
+Router menggunakan informasi jaringan untuk menentukan
+ke mana paket harus diteruskan.
+</p>
+
+<table>
+<tr>
+<th>Informasi</th>
+<th>Fungsi</th>
+</tr>
+
+<tr>
+<td>Alamat tujuan</td>
+<td>Menentukan jaringan tujuan paket.</td>
+</tr>
+
+<tr>
+<td>Prioritas koneksi</td>
+<td>Membantu memilih jalur yang sesuai.</td>
+</tr>
+
+<tr>
+<td>Aturan lalu lintas</td>
+<td>Mengatur bagaimana paket ditangani.</td>
+</tr>
+
+<tr>
+<td>Kondisi jaringan</td>
+<td>Membantu memilih jalur yang lebih optimal.</td>
+</tr>
+</table>
+</div>
+
+
+<!-- TRACEROUTE -->
+<div class="card">
+<h2>14. Menelusuri Paket Data</h2>
+
+<p>
+Pada Windows, perjalanan paket menuju suatu alamat dapat
+ditelusuri menggunakan perintah <b>tracert</b>.
+</p>
+
+<h3>Langkah-langkah</h3>
+
+<ol>
+<li>Buka <b>Command Prompt</b>.</li>
+<li>Ketik <b>cd \</b> untuk kembali ke direktori utama.</li>
+<li>Ketik <b>tracert</b> diikuti alamat tujuan.</li>
+</ol>
+
+<div class="mekanisme">
+<b>Contoh:</b><br><br>
+
+<code>
+tracert www.amazon.com
+</code>
+
+<br><br>
+
+Perintah tersebut menampilkan router atau hop yang
+dilewati paket dari komputer menuju tujuan.
+</div>
+
+<h3>Contoh Perintah Lain</h3>
+
+<div class="alur">
+tracert google.com
+<br>
+tracert youtube.com
+<br>
+tracert github.com
+</div>
+
+<p>
+Setiap hop menunjukkan salah satu titik jaringan yang
+dilewati paket sebelum mencapai tujuan.
+</p>
+</div>
+
+
+<!-- MASALAH TRAFFIC -->
+<div class="card">
+<h2>15. Masalah Trafik dalam Jaringan</h2>
+
+<p>
+Ketika jaringan semakin besar, penggunaan hub dan peningkatan
+jumlah node dapat menyebabkan berbagai masalah.
+</p>
+
+
+<h3>A. Scalability</h3>
+
+<p>
+Scalability adalah kemampuan jaringan untuk berkembang
+mengikuti peningkatan jumlah perangkat dan kebutuhan data.
+</p>
+
+<p>
+Pada jaringan berbasis hub, bandwidth harus dibagi sehingga
+pertumbuhan jaringan dapat menurunkan kinerja.
+</p>
+
+<div class="mekanisme">
+<b>Masalah:</b>
+Jumlah perangkat bertambah → kebutuhan bandwidth meningkat
+→ kinerja jaringan dapat menurun.
+</div>
+
+
+<h3>B. Latency</h3>
+
+<p>
+Latency adalah waktu yang diperlukan paket untuk mencapai
+tujuan.
+</p>
+
+<div class="mekanisme">
+Semakin banyak node →
+semakin banyak perangkat berbagi jaringan →
+waktu tunggu meningkat →
+latency meningkat.
+</div>
+
+<p>
+Pengiriman file besar juga dapat memperlambat komunikasi
+perangkat lain.
+</p>
+
+
+<h3>C. Kegagalan Jaringan</h3>
+
+<p>
+Masalah pada satu perangkat dalam jaringan berbasis hub
+dapat memengaruhi perangkat lain, terutama akibat pengaturan
+yang tidak tepat atau broadcast berlebihan.
+</p>
+
+<div class="mekanisme">
+<b>Solusi:</b><br>
+Menggunakan switch untuk membatasi broadcast dan
+mengatur lalu lintas data dengan lebih baik.
+</div>
+
+
+<h3>D. Tabrakan Antar Paket Data</h3>
+
+<p>
+Pada Ethernet, CSMA/CD digunakan untuk membantu mencegah
+terjadinya tabrakan data.
+</p>
+
+<div class="mekanisme">
+Node ingin mengirim →
+memeriksa jaringan →
+jika jaringan tersedia, data dikirim →
+jika terjadi tabrakan, paket hilang →
+transmisi diulang.
+</div>
+
+<div class="warning">
+<b>Catatan:</b>
+Semakin banyak node berada dalam satu segmen jaringan,
+semakin besar potensi terjadinya tabrakan paket.
+</div>
+</div>
+
+
+<!-- PERBANDINGAN -->
+<div class="card">
+<h2>16. Perbandingan Perangkat Jaringan</h2>
+
+<table>
+
+<tr>
+<th>Perangkat</th>
+<th>Fungsi</th>
+</tr>
+
+<tr>
+<td>Server</td>
+<td>Menyediakan layanan.</td>
+</tr>
+
+<tr>
+<td>Client</td>
+<td>Mengakses layanan.</td>
+</tr>
+
+<tr>
+<td>NIC</td>
+<td>Menghubungkan perangkat ke jaringan.</td>
+</tr>
+
+<tr>
+<td>Repeater</td>
+<td>Memperkuat sinyal.</td>
+</tr>
+
+<tr>
+<td>Hub</td>
+<td>Menghubungkan perangkat dan meneruskan data.</td>
+</tr>
+
+<tr>
+<td>Bridge</td>
+<td>Menghubungkan segmen jaringan dan menyaring data.</td>
+</tr>
+
+<tr>
+<td>Switch</td>
+<td>Mengirim data ke perangkat tujuan dengan lebih efisien.</td>
+</tr>
+
+<tr>
+<td>Router</td>
+<td>Menentukan jalur paket antarjaringan.</td>
+</tr>
+
+</table>
+</div>
+
+
+<!-- ALUR KESELURUHAN -->
+<div class="card">
+
+<h2>17. Alur Pengiriman Data Lengkap</h2>
+
+<div class="alur">
+
+Client
+<br>
+↓
+<br>
+NIC
+<br>
+↓
+<br>
+Switch / Hub
+<br>
+↓
+<br>
+Router
+<br>
+↓
+<br>
+Jaringan Tujuan
+<br>
+↓
+<br>
+Router Tujuan
+<br>
+↓
+<br>
+Switch
+<br>
+↓
+<br>
+Server / Client Tujuan
+
+</div>
+
+<div class="mekanisme">
+
+<b>Proses lengkap:</b>
+
+<ol>
+<li>Client membuat data.</li>
+<li>Data diberi header melalui proses enkapsulasi.</li>
+<li>Data dibagi menjadi paket.</li>
+<li>NIC mengirimkan paket ke jaringan.</li>
+<li>Switch meneruskan paket ke jalur yang sesuai.</li>
+<li>Router membaca alamat tujuan.</li>
+<li>Router menentukan jalur terbaik.</li>
+<li>Paket dapat melewati beberapa router.</li>
+<li>Jika jalur terganggu, paket dapat menggunakan jalur alternatif.</li>
+<li>Paket mencapai jaringan tujuan.</li>
+<li>Perangkat tujuan menerima paket.</li>
+<li>Data disusun kembali menjadi informasi yang dapat digunakan.</li>
+</ol>
+
+</div>
+
+</div>
+
+
+<!-- RINGKASAN -->
+<div class="card">
+
+<h2>18. Ringkasan Cepat</h2>
+
+<table>
+
+<tr>
+<th>Materi</th>
+<th>Inti</th>
+</tr>
+
+<tr>
+<td>Server</td>
+<td>Penyedia layanan jaringan.</td>
+</tr>
+
+<tr>
+<td>Client</td>
+<td>Pengguna layanan jaringan.</td>
+</tr>
+
+<tr>
+<td>NIC</td>
+<td>Penghubung perangkat dengan jaringan.</td>
+</tr>
+
+<tr>
+<td>UTP</td>
+<td>Kabel LAN murah dan umum digunakan.</td>
+</tr>
+
+<tr>
+<td>STP</td>
+<td>Kabel twisted pair dengan pelindung.</td>
+</tr>
+
+<tr>
+<td>Fiber Optic</td>
+<td>Menggunakan cahaya, cepat dan jarak jauh.</td>
+</tr>
+
+<tr>
+<td>Repeater</td>
+<td>Memperkuat sinyal.</td>
+</tr>
+
+<tr>
+<td>Hub</td>
+<td>Meneruskan data ke perangkat yang terhubung.</td>
+</tr>
+
+<tr>
+<td>Bridge</td>
+<td>Menghubungkan dan menyaring segmen jaringan.</td>
+</tr>
+
+<tr>
+<td>Switch</td>
+<td>Meneruskan data secara lebih terarah.</td>
+</tr>
+
+<tr>
+<td>Router</td>
+<td>Menentukan jalur paket antarjaringan.</td>
+</tr>
+
+<tr>
+<td>Enkapsulasi</td>
+<td>Menambahkan header pada data.</td>
+</tr>
+
+<tr>
+<td>Traceroute</td>
+<td>Menelusuri jalur/hop paket data.</td>
+</tr>
+
+<tr>
+<td>Scalability</td>
+<td>Kemampuan jaringan berkembang.</td>
+</tr>
+
+<tr>
+<td>Latency</td>
+<td>Waktu yang dibutuhkan paket mencapai tujuan.</td>
+</tr>
+
+<tr>
+<td>Collision</td>
+<td>Tabrakan paket saat transmisi.</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<footer>
+Informatika SMA/MA Kelas XI<br>
+Topologi Jaringan dan Mekanisme Pengiriman Data
+</footer>
+
+</body>
+</html>
+</body>
+</html>
